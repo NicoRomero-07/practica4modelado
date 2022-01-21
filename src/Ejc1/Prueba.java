@@ -3,7 +3,7 @@ package Ejc1;
 import Ejc1.Pack1.Proxy;
 import Ejc1.Pack1.X;
 
-public class main {
+public class Prueba {
 
     public static void main (String [ ] args) {
         X x = new X();
@@ -15,11 +15,5 @@ public class main {
         p.rutina2(1,c);
         a.accesoRutina3(1);
         b.accesoRutina3(1);
-
-
-
-
-
-
     }
 }
