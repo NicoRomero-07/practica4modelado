@@ -16,7 +16,7 @@ public class Rojo extends Estado{
     }
 
     @Override
-    public String estado() {
+    protected String estado() {
         return "cerrado";
     }
 }

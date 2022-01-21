@@ -1,22 +1,22 @@
 package Ejc2.A;
 
 public class Verde extends Estado{
-    public Verde(Biestable b) {
+    protected Verde(Biestable b) {
         super(b);
     }
 
     @Override
-    public void abrir() {
+    protected void abrir() {
 
     }
 
     @Override
-    public void cerrar() {
+    protected void cerrar() {
         super.biest.cambiarEstado(new Rojo(super.biest));
     }
 
     @Override
-    public String estado() {
+    protected String estado() {
         return "abierto";
     }
 }
