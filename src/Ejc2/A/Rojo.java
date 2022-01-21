@@ -7,7 +7,7 @@ public class Rojo extends Estado{
 
     @Override
     protected void abrir() {
-        super.biest.cambiarEstado(new Verde(super.biest));
+        super.biest.setEstado(new Verde(super.biest));
     }
 
     @Override

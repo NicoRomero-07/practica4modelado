@@ -4,12 +4,11 @@ public class Biestable {
 
     private Estado estado;
 
-
     protected Biestable(){
         estado = new Rojo(this);
     }
 
-    protected void cambiarEstado(Estado nuevoEst){
+    protected void setEstado(Estado nuevoEst){
         estado = nuevoEst;
     }
 
