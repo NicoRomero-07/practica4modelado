@@ -1,4 +1,8 @@
-package Ejc1;
+package Ejc1.Pack1;
+
+import Ejc1.A;
+import Ejc1.B;
+import Ejc1.C;
 
 public class Proxy {
     private X x;
