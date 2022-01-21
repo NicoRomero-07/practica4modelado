@@ -1,12 +1,25 @@
 package Ejc2.A;
 
 public class Biestable {
+    private Estado estado;
 
-    public void abrir(){
-
+    protected Biestable(){
+        estado = new Rojo(this);
     }
 
-    public void cerrar(){
+    protected void cambiarEstado(Estado nuevoEst){
+        estado = nuevoEst;
+    }
 
+    protected void abrir(){
+        estado.abrir();
+    }
+
+    protected void cerrar(){
+        estado.cerrar();
+    }
+
+    protected String estado(){
+        return estado.estado();
     }
 }
