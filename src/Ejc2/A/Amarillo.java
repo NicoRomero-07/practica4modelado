@@ -1,22 +1,22 @@
 package Ejc2.A;
 
-public class Rojo extends Estado{
-    protected Rojo(Biestable b) {
+public class Amarillo extends Estado{
+    protected Amarillo(Biestable b) {
         super(b);
     }
 
     @Override
     protected void abrir() {
-        biest.setEstado(new Verde(biest));
+        biest.setEstado(new TriVerde(biest));
     }
 
     @Override
     protected void cerrar() {
-
+        biest.setEstado(new TriRojo(biest));
     }
 
     @Override
     protected String estado() {
-        return "cerrado";
+        return "Precaucion";
     }
 }
