@@ -1,15 +1,29 @@
 package Ejc3;
 
-public class Mailbox {
-    protected Mailbox(){
+import java.util.ArrayList;
 
+public class Mailbox {
+    private ArrayList<Email> listEmail;
+
+    protected Mailbox(){
+        listEmail = new ArrayList<>();
     }
 
     protected void show(){
 
     }
     private void sort(){
-
+        for(int i=2; i<listEmail.size(); i++){
+            for(int j=listEmail.size(); j>=i; j--){
+                Email e1 = listEmail.get(j);
+                Email e2 = listEmail.get(j-1);
+                if(before(e1,e2)){
+                    Email aux = e1;
+                    listEmail.add(j-1,e2);
+                    listEmail.add(j,aux);
+                }
+            }
+        }
     }
 
     private Boolean before(Email m1, Email m2){
