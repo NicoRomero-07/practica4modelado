@@ -22,8 +22,8 @@ public class Mailbox {
                 Email e2 = listEmail.get(j-1);
                 if(before(e1,e2)){
                     Email aux = e1;
-                    listEmail.add(j-1,e2);
-                    listEmail.add(j,aux);
+                    listEmail.add(j,e2);
+                    listEmail.add(j-1,aux);
                 }
             }
         }
