@@ -3,15 +3,18 @@ package Ejc3;
 import java.util.ArrayList;
 
 public class Mailbox {
+
     private ArrayList<Email> listEmail;
+    private SortStrategy strategy;
 
     protected Mailbox(){
         listEmail = new ArrayList<>();
     }
 
     protected void show(){
-
+        System.out.println(listEmail);
     }
+
     private void sort(){
         for(int i=2; i<listEmail.size(); i++){
             for(int j=listEmail.size(); j>=i; j--){
@@ -27,7 +30,6 @@ public class Mailbox {
     }
 
     private Boolean before(Email m1, Email m2){
-
-        return false;
+        return strategy.before(m1,m2);
     }
 }
