@@ -19,7 +19,6 @@ public class Proxy {
             if(o instanceof A || o instanceof B){
                 x.rutina2(y);
             }else {
-                System.out.println("No autorizado");
                 throw new Exception();
             }
         } catch (Exception e) {
@@ -32,7 +31,6 @@ public class Proxy {
             if (o instanceof A || o instanceof C) {
                 return x.rutina3(i);
             } else {
-                System.out.println("No autorizado");
                 throw new Exception();
             }
         }
